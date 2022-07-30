@@ -9,8 +9,8 @@ import Foundation
 
 protocol AriclesRepository {
     @discardableResult
-    func getArticles(period: Int, apiKey: String, completion: (Result<[Article], Error>) -> Void) -> Cancellable?
+    func getArticles(period: Int, apiKey: String, completion: @escaping (Result<[Article], Error>) -> Void) -> Cancellable?
     
     @discardableResult
-    func searchArticles(query: String, completion: (Result<[Article], Error>) -> Void) -> Cancellable?
+    func searchArticles(query: String, completion: @escaping (Result<[Article], Error>) -> Void) -> Cancellable?
 }

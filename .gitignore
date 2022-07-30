@@ -79,7 +79,7 @@ Pods/
 
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+*.xcworkspace/
 
 # Carthage
 #
@@ -106,3 +106,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# xcworkspace/xcshareddata/
